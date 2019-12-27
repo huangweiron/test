@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/index/css/tcontainer.css">
+</head>
+
+<body>
+    <button class="btn" onclick="hui()">
+        <<</button> <table cellspacing="0">
+
+            <tr>
+                <th>编号</th>
+                <th>学生</th>
+                <th>作业</th>
+                <th>文件</th>
+                <th>时间</th>
+                <th>操作</th>
+            </tr>
+            {foreach $words as $key => $word}
+            <tr>
+                <td>
+                    {$key+1}
+                </td>
+                <td>{$word.name}</td>
+                <td>{$word.content}</td>
+                <td><a href="download?filename={$word.filename}">{$word.filename}</a></td>
+                <td>{$word.time}</td>
+                <td><a href="chakan?id={$word.Id}" class="read">批改</a></td>
+            </tr>
+            {/foreach}
+            <tr>
+                <td colspan="6" class="page">
+                    <a href="read?page=-&num={$page}&tewId={$sktimeId}">上一页</a>
+                    <a href="read?page=+&num={$page}&tewId={$sktimeId}">下一页</a>
+                </td>
+            </tr>
+            </table>
+            <script>
+                function hui() {
+                    history.go(-1);
+                }
+            </script>
+</body>
+
+</html>

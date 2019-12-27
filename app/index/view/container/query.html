@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="/static/index/css/work.css">
+<button class="btn" onclick="hui()">
+    <<</button> <div class="query">
+        <h2>课堂知识点</h2>
+        <textarea cols="100" rows="10" readonly="readonly">
+            {$word.know}
+        </textarea>
+        <h2>本次作业内容：</h2>
+        <textarea cols="100" rows="10" readonly="readonly">
+        {$word.content}
+    </textarea>
+        <h2>文件</h2>
+        <a href="download?filename={$word.filename}">{$word.filename}</a><br><br>
+        <a href="addtest?user={$user}&teaword={$word.Id}" target="mymain"
+            class="complete">查看/完成作业</a><span>({$complete})</span>
+        </div>
+        <script>
+            function hui() {
+                history.go(-1);
+            }
+        </script>

@@ -1,0 +1,641 @@
+[2019-12-17T20:11:52+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\index\index.html [ array (
+) ]
+[2019-12-17T20:12:04+08:00][sql] CONNECT:[ UseTime:0.002357s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:12:04+08:00][sql] SHOW FULL COLUMNS FROM `student` [ RunTime:0.088065s ]
+[2019-12-17T20:12:04+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.038331s ]
+[2019-12-17T20:12:04+08:00][sql] SELECT * FROM `student` WHERE  `user_id` = '201730622101' LIMIT 1 [ RunTime:0.001307s ]
+[2019-12-17T20:12:04+08:00][sql] CONNECT:[ UseTime:0.001988s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:12:04+08:00][sql] SHOW FULL COLUMNS FROM `student` [ RunTime:0.003574s ]
+[2019-12-17T20:12:04+08:00][sql] SELECT * FROM `student` WHERE  `Id` = 1 LIMIT 1 [ RunTime:0.000826s ]
+[2019-12-17T20:12:04+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\index.html [ array (
+  0 => 'id',
+) ]
+[2019-12-17T20:12:05+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\default.html [ array (
+) ]
+[2019-12-17T20:12:07+08:00][sql] CONNECT:[ UseTime:0.001822s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:12:07+08:00][sql] SHOW FULL COLUMNS FROM `student` [ RunTime:0.004290s ]
+[2019-12-17T20:12:07+08:00][sql] SELECT * FROM `student` `a` INNER JOIN `class` `b` ON `a`.`classId`=`b`.`Id` WHERE  `a`.`Id` = '1' LIMIT 1 [ RunTime:0.060375s ]
+[2019-12-17T20:12:07+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\person.html [ array (
+  0 => 'student',
+) ]
+[2019-12-17T20:12:09+08:00][sql] CONNECT:[ UseTime:0.001917s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:12:09+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.050411s ]
+[2019-12-17T20:12:09+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.007924s ]
+[2019-12-17T20:12:09+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.027500s ]
+[2019-12-17T20:12:09+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:12:15+08:00][sql] CONNECT:[ UseTime:0.001798s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:12:15+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003547s ]
+[2019-12-17T20:12:15+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.003578s ]
+[2019-12-17T20:12:15+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 10,10 [ RunTime:0.001863s ]
+[2019-12-17T20:12:15+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.002002s ]
+[2019-12-17T20:12:15+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:12:16+08:00][sql] CONNECT:[ UseTime:0.003064s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:12:16+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003642s ]
+[2019-12-17T20:12:16+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.003432s ]
+[2019-12-17T20:12:16+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.002477s ]
+[2019-12-17T20:12:16+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:14:46+08:00][sql] CONNECT:[ UseTime:0.002293s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:14:46+08:00][sql] SHOW FULL COLUMNS FROM `student` [ RunTime:0.004341s ]
+[2019-12-17T20:14:46+08:00][sql] SELECT * FROM `student` WHERE  `Id` = 1 LIMIT 1 [ RunTime:0.000972s ]
+[2019-12-17T20:14:46+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\index.html [ array (
+  0 => 'id',
+) ]
+[2019-12-17T20:14:46+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\default.html [ array (
+) ]
+[2019-12-17T20:14:48+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\default.html [ array (
+) ]
+[2019-12-17T20:14:48+08:00][sql] CONNECT:[ UseTime:0.001770s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:14:48+08:00][sql] SHOW FULL COLUMNS FROM `student` [ RunTime:0.003418s ]
+[2019-12-17T20:14:48+08:00][sql] SELECT * FROM `student` `a` INNER JOIN `class` `b` ON `a`.`classId`=`b`.`Id` WHERE  `a`.`Id` = '1' LIMIT 1 [ RunTime:0.002576s ]
+[2019-12-17T20:14:48+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\person.html [ array (
+  0 => 'student',
+) ]
+[2019-12-17T20:14:50+08:00][sql] CONNECT:[ UseTime:0.001590s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:14:50+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.004765s ]
+[2019-12-17T20:14:50+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.003245s ]
+[2019-12-17T20:14:50+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.002100s ]
+[2019-12-17T20:14:50+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:15:03+08:00][sql] CONNECT:[ UseTime:0.001819s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:15:03+08:00][sql] SHOW FULL COLUMNS FROM `student` [ RunTime:0.008779s ]
+[2019-12-17T20:15:03+08:00][sql] SELECT * FROM `student` WHERE  `Id` = 1 LIMIT 1 [ RunTime:0.000882s ]
+[2019-12-17T20:15:03+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\index.html [ array (
+  0 => 'id',
+) ]
+[2019-12-17T20:15:03+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\default.html [ array (
+) ]
+[2019-12-17T20:15:05+08:00][sql] CONNECT:[ UseTime:0.003160s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:15:05+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003536s ]
+[2019-12-17T20:15:05+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.003589s ]
+[2019-12-17T20:15:05+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.001960s ]
+[2019-12-17T20:15:05+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:15:44+08:00][sql] CONNECT:[ UseTime:0.001680s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:15:44+08:00][sql] SHOW FULL COLUMNS FROM `student` [ RunTime:0.009979s ]
+[2019-12-17T20:15:44+08:00][sql] SELECT * FROM `student` WHERE  `Id` = 1 LIMIT 1 [ RunTime:0.001373s ]
+[2019-12-17T20:15:44+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\index.html [ array (
+  0 => 'id',
+) ]
+[2019-12-17T20:15:45+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\default.html [ array (
+) ]
+[2019-12-17T20:15:45+08:00][sql] CONNECT:[ UseTime:0.002539s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:15:45+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003692s ]
+[2019-12-17T20:15:45+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.004374s ]
+[2019-12-17T20:15:45+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.003079s ]
+[2019-12-17T20:15:45+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:15:58+08:00][sql] CONNECT:[ UseTime:0.001726s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:15:58+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003762s ]
+[2019-12-17T20:15:58+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.004559s ]
+[2019-12-17T20:15:58+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.003554s ]
+[2019-12-17T20:15:58+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:16:18+08:00][sql] CONNECT:[ UseTime:0.002397s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:16:18+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003822s ]
+[2019-12-17T20:16:18+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.003829s ]
+[2019-12-17T20:16:18+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.002954s ]
+[2019-12-17T20:16:18+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:16:35+08:00][sql] CONNECT:[ UseTime:0.001830s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:16:35+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.005180s ]
+[2019-12-17T20:16:35+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.013541s ]
+[2019-12-17T20:16:35+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.002313s ]
+[2019-12-17T20:16:35+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:16:36+08:00][sql] CONNECT:[ UseTime:0.001829s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:16:36+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003625s ]
+[2019-12-17T20:16:36+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.001701s ]
+[2019-12-17T20:16:36+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.001855s ]
+[2019-12-17T20:16:36+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:16:45+08:00][sql] CONNECT:[ UseTime:0.001628s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:16:45+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003466s ]
+[2019-12-17T20:16:45+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.004202s ]
+[2019-12-17T20:16:45+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.002514s ]
+[2019-12-17T20:16:45+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:16:54+08:00][sql] CONNECT:[ UseTime:0.002421s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:16:54+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003396s ]
+[2019-12-17T20:16:54+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.003364s ]
+[2019-12-17T20:16:54+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.001861s ]
+[2019-12-17T20:16:54+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:17:10+08:00][sql] CONNECT:[ UseTime:0.001621s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:17:10+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003010s ]
+[2019-12-17T20:17:10+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.001701s ]
+[2019-12-17T20:17:10+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.001857s ]
+[2019-12-17T20:17:10+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:17:14+08:00][sql] CONNECT:[ UseTime:0.001610s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:17:14+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003227s ]
+[2019-12-17T20:17:14+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.001723s ]
+[2019-12-17T20:17:14+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.001872s ]
+[2019-12-17T20:17:14+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:17:15+08:00][sql] CONNECT:[ UseTime:0.002406s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:17:15+08:00][sql] SHOW FULL COLUMNS FROM `student` [ RunTime:0.004714s ]
+[2019-12-17T20:17:15+08:00][sql] SELECT * FROM `student` `a` INNER JOIN `class` `b` ON `a`.`classId`=`b`.`Id` WHERE  `a`.`Id` = '1' LIMIT 1 [ RunTime:0.003469s ]
+[2019-12-17T20:17:15+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\person.html [ array (
+  0 => 'student',
+) ]
+[2019-12-17T20:17:16+08:00][sql] CONNECT:[ UseTime:0.001914s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:17:16+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003725s ]
+[2019-12-17T20:17:16+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.004310s ]
+[2019-12-17T20:17:16+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.002220s ]
+[2019-12-17T20:17:16+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:17:36+08:00][sql] CONNECT:[ UseTime:0.002014s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:17:36+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003937s ]
+[2019-12-17T20:17:36+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.003572s ]
+[2019-12-17T20:17:36+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.003016s ]
+[2019-12-17T20:17:36+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:17:36+08:00][error] [0]Call to undefined function 无()[D:\phpstudy_pro\WWW\test\runtime\index\temp\bb871cd0fee54475147d7a84cae311a7.php:18]
+[2019-12-17T20:17:50+08:00][sql] CONNECT:[ UseTime:0.001780s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:17:50+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.002477s ]
+[2019-12-17T20:17:50+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.001784s ]
+[2019-12-17T20:17:50+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.002002s ]
+[2019-12-17T20:17:50+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:18:13+08:00][sql] CONNECT:[ UseTime:0.001996s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:18:13+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003529s ]
+[2019-12-17T20:18:13+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.004019s ]
+[2019-12-17T20:18:13+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.002019s ]
+[2019-12-17T20:18:13+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:18:13+08:00][error] [8]未定义数组索引: na[D:\phpstudy_pro\WWW\test\runtime\index\temp\bb871cd0fee54475147d7a84cae311a7.php:18]
+[2019-12-17T20:18:27+08:00][sql] CONNECT:[ UseTime:0.001809s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:18:27+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.002133s ]
+[2019-12-17T20:18:27+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.001730s ]
+[2019-12-17T20:18:27+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.001910s ]
+[2019-12-17T20:18:27+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:18:27+08:00][error] [8]未定义数组索引: wu[D:\phpstudy_pro\WWW\test\runtime\index\temp\bb871cd0fee54475147d7a84cae311a7.php:18]
+[2019-12-17T20:18:35+08:00][sql] CONNECT:[ UseTime:0.001584s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:18:35+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003315s ]
+[2019-12-17T20:18:35+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.004006s ]
+[2019-12-17T20:18:35+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.002488s ]
+[2019-12-17T20:18:35+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:18:35+08:00][error] [0]Function name must be a string[D:\phpstudy_pro\WWW\test\runtime\index\temp\bb871cd0fee54475147d7a84cae311a7.php:18]
+[2019-12-17T20:18:48+08:00][sql] CONNECT:[ UseTime:0.001979s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:18:48+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.002063s ]
+[2019-12-17T20:18:48+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.002186s ]
+[2019-12-17T20:18:48+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.002464s ]
+[2019-12-17T20:18:48+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:18:50+08:00][sql] CONNECT:[ UseTime:0.001624s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:18:50+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.001766s ]
+[2019-12-17T20:18:50+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.002676s ]
+[2019-12-17T20:18:50+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 10,10 [ RunTime:0.001997s ]
+[2019-12-17T20:18:50+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.001954s ]
+[2019-12-17T20:18:50+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T20:18:55+08:00][sql] CONNECT:[ UseTime:0.002608s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:18:55+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.002072s ]
+[2019-12-17T20:18:55+08:00][sql] SELECT * FROM `tea_word` WHERE  `Id` = 5 LIMIT 1 [ RunTime:0.000797s ]
+[2019-12-17T20:18:55+08:00][sql] SHOW FULL COLUMNS FROM `stud_word` [ RunTime:0.047739s ]
+[2019-12-17T20:18:55+08:00][sql] SELECT * FROM `stud_word` WHERE  `studId` = 1  AND `tewId` = 5 LIMIT 1 [ RunTime:0.018998s ]
+[2019-12-17T20:18:55+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\query.html [ array (
+  0 => 'word',
+  1 => 'user',
+  2 => 'complete',
+) ]
+[2019-12-17T20:19:00+08:00][sql] CONNECT:[ UseTime:0.001759s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:19:00+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.002027s ]
+[2019-12-17T20:19:00+08:00][sql] SELECT * FROM `tea_word` WHERE  `Id` = 9 LIMIT 1 [ RunTime:0.001193s ]
+[2019-12-17T20:19:00+08:00][sql] SHOW FULL COLUMNS FROM `stud_word` [ RunTime:0.004654s ]
+[2019-12-17T20:19:00+08:00][sql] SELECT * FROM `stud_word` WHERE  `studId` = 1  AND `tewId` = 9 LIMIT 1 [ RunTime:0.001633s ]
+[2019-12-17T20:19:00+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\query.html [ array (
+  0 => 'word',
+  1 => 'user',
+  2 => 'complete',
+) ]
+[2019-12-17T20:19:22+08:00][sql] CONNECT:[ UseTime:0.002562s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T20:19:22+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.001882s ]
+[2019-12-17T20:19:22+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.001849s ]
+[2019-12-17T20:19:22+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.002160s ]
+[2019-12-17T20:19:22+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T22:00:32+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\index\index.html [ array (
+) ]
+[2019-12-17T22:00:32+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\index\index.html [ array (
+) ]
+[2019-12-17T22:00:41+08:00][sql] CONNECT:[ UseTime:0.183892s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:00:41+08:00][sql] SHOW FULL COLUMNS FROM `student` [ RunTime:0.063154s ]
+[2019-12-17T22:00:41+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.003852s ]
+[2019-12-17T22:00:41+08:00][sql] SELECT * FROM `teacher` WHERE  `user_id` = '666666' LIMIT 1 [ RunTime:0.039813s ]
+[2019-12-17T22:00:42+08:00][sql] CONNECT:[ UseTime:0.001525s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:00:42+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.006253s ]
+[2019-12-17T22:00:42+08:00][sql] SELECT * FROM `teacher` WHERE  `Id` = 1 LIMIT 1 [ RunTime:0.055788s ]
+[2019-12-17T22:00:42+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\index.html [ array (
+  0 => 'id',
+) ]
+[2019-12-17T22:00:42+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\default.html [ array (
+) ]
+[2019-12-17T22:00:45+08:00][sql] CONNECT:[ UseTime:0.001691s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:00:45+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.003397s ]
+[2019-12-17T22:00:45+08:00][sql] SELECT * FROM `teacher` WHERE  `Id` = 1 LIMIT 1 [ RunTime:0.000891s ]
+[2019-12-17T22:00:45+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\person.html [ array (
+  0 => 'teacher',
+) ]
+[2019-12-17T22:00:51+08:00][sql] CONNECT:[ UseTime:0.001546s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:00:51+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.003344s ]
+[2019-12-17T22:00:51+08:00][sql] SHOW FULL COLUMNS FROM `class` [ RunTime:0.003455s ]
+[2019-12-17T22:00:51+08:00][sql] SELECT * FROM `teacher` WHERE  `Id` = 1 LIMIT 1 [ RunTime:0.000812s ]
+[2019-12-17T22:00:51+08:00][sql] SELECT * FROM `class` WHERE  `Id` = 1 [ RunTime:0.000946s ]
+[2019-12-17T22:00:51+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\release.html [ array (
+  0 => 'user',
+  1 => 'bnames',
+) ]
+[2019-12-17T22:00:54+08:00][sql] CONNECT:[ UseTime:0.001988s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:00:54+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.003366s ]
+[2019-12-17T22:00:54+08:00][sql] SHOW FULL COLUMNS FROM `class` [ RunTime:0.003517s ]
+[2019-12-17T22:00:54+08:00][sql] SELECT * FROM `teacher` WHERE  `Id` = 1 LIMIT 1 [ RunTime:0.001043s ]
+[2019-12-17T22:00:54+08:00][sql] SELECT * FROM `class` WHERE  `Id` = 1 [ RunTime:0.000829s ]
+[2019-12-17T22:00:54+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\release.html [ array (
+  0 => 'user',
+  1 => 'bnames',
+) ]
+[2019-12-17T22:00:55+08:00][sql] CONNECT:[ UseTime:0.001663s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:00:55+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.003295s ]
+[2019-12-17T22:00:55+08:00][sql] SELECT * FROM `teacher` WHERE  `Id` = 1 LIMIT 1 [ RunTime:0.000764s ]
+[2019-12-17T22:00:55+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\person.html [ array (
+  0 => 'teacher',
+) ]
+[2019-12-17T22:00:56+08:00][sql] CONNECT:[ UseTime:0.001895s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:00:56+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.003368s ]
+[2019-12-17T22:00:56+08:00][sql] SHOW FULL COLUMNS FROM `class` [ RunTime:0.003014s ]
+[2019-12-17T22:00:56+08:00][sql] SELECT * FROM `teacher` WHERE  `Id` = 1 LIMIT 1 [ RunTime:0.000626s ]
+[2019-12-17T22:00:56+08:00][sql] SELECT * FROM `class` WHERE  `Id` = 1 [ RunTime:0.000567s ]
+[2019-12-17T22:00:56+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\release.html [ array (
+  0 => 'user',
+  1 => 'bnames',
+) ]
+[2019-12-17T22:00:57+08:00][sql] CONNECT:[ UseTime:0.001866s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:00:57+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003419s ]
+[2019-12-17T22:00:57+08:00][sql] SELECT * FROM `tea_word` WHERE  `teaId` = 1  AND `classId` = 1 LIMIT 0,10 [ RunTime:0.062361s ]
+[2019-12-17T22:00:57+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\readclass.html [ array (
+  0 => 'user',
+  1 => 'classId',
+  2 => 'twords',
+  3 => 'page',
+) ]
+[2019-12-17T22:02:22+08:00][sql] CONNECT:[ UseTime:0.001867s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:02:22+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.003301s ]
+[2019-12-17T22:02:22+08:00][sql] SELECT * FROM `teacher` WHERE  `Id` = 1 LIMIT 1 [ RunTime:0.002800s ]
+[2019-12-17T22:02:22+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\index.html [ array (
+  0 => 'id',
+) ]
+[2019-12-17T22:02:22+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\default.html [ array (
+) ]
+[2019-12-17T22:02:24+08:00][sql] CONNECT:[ UseTime:0.001650s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:02:24+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.004495s ]
+[2019-12-17T22:02:24+08:00][sql] SHOW FULL COLUMNS FROM `class` [ RunTime:0.003426s ]
+[2019-12-17T22:02:24+08:00][sql] SELECT * FROM `teacher` WHERE  `Id` = 1 LIMIT 1 [ RunTime:0.000826s ]
+[2019-12-17T22:02:24+08:00][sql] SELECT * FROM `class` WHERE  `Id` = 1 [ RunTime:0.000895s ]
+[2019-12-17T22:02:24+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\release.html [ array (
+  0 => 'user',
+  1 => 'bnames',
+) ]
+[2019-12-17T22:02:26+08:00][sql] CONNECT:[ UseTime:0.001758s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:02:26+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003429s ]
+[2019-12-17T22:02:26+08:00][sql] SELECT * FROM `tea_word` WHERE  `teaId` = 1  AND `classId` = 1 LIMIT 0,10 [ RunTime:0.001216s ]
+[2019-12-17T22:02:26+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\readclass.html [ array (
+  0 => 'user',
+  1 => 'classId',
+  2 => 'twords',
+  3 => 'page',
+) ]
+[2019-12-17T22:02:30+08:00][sql] CONNECT:[ UseTime:0.002328s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:02:30+08:00][sql] SHOW FULL COLUMNS FROM `stud_word` [ RunTime:0.003959s ]
+[2019-12-17T22:02:30+08:00][sql] SHOW FULL COLUMNS FROM `student` [ RunTime:0.003551s ]
+[2019-12-17T22:02:30+08:00][sql] SELECT * FROM `student` `a` INNER JOIN ( SELECT * FROM `stud_word` WHERE  `tewId` = 9 ) `s` ON `a`.`Id`=`s`.`studId` WHERE  `classId` = 1 ORDER BY `s`.`time` DESC LIMIT 0,10 [ RunTime:0.110607s ]
+[2019-12-17T22:02:30+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\read.html [ array (
+  0 => 'words',
+  1 => 'tewId',
+  2 => 'classId',
+  3 => 'page',
+) ]
+[2019-12-17T22:22:48+08:00][sql] CONNECT:[ UseTime:0.036792s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:22:48+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.061877s ]
+[2019-12-17T22:22:48+08:00][sql] SHOW FULL COLUMNS FROM `class` [ RunTime:0.003978s ]
+[2019-12-17T22:22:48+08:00][sql] SELECT * FROM `teacher` WHERE  `Id` = 1 LIMIT 1 [ RunTime:0.033407s ]
+[2019-12-17T22:22:48+08:00][sql] SELECT * FROM `class` WHERE  `Id` = 1 [ RunTime:0.001256s ]
+[2019-12-17T22:22:48+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\release.html [ array (
+  0 => 'user',
+  1 => 'bnames',
+) ]
+[2019-12-17T22:22:48+08:00][sql] CONNECT:[ UseTime:0.001874s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:22:48+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.002493s ]
+[2019-12-17T22:22:48+08:00][sql] SHOW FULL COLUMNS FROM `class` [ RunTime:0.001934s ]
+[2019-12-17T22:22:48+08:00][sql] SELECT * FROM `teacher` WHERE  `Id` = 1 LIMIT 1 [ RunTime:0.001075s ]
+[2019-12-17T22:22:48+08:00][sql] SELECT * FROM `class` WHERE  `Id` = 1 [ RunTime:0.000985s ]
+[2019-12-17T22:22:48+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\release.html [ array (
+  0 => 'user',
+  1 => 'bnames',
+) ]
+[2019-12-17T22:22:49+08:00][sql] CONNECT:[ UseTime:0.001956s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:22:49+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.002026s ]
+[2019-12-17T22:22:49+08:00][sql] SHOW FULL COLUMNS FROM `class` [ RunTime:0.003629s ]
+[2019-12-17T22:22:49+08:00][sql] SELECT * FROM `teacher` WHERE  `Id` = 1 LIMIT 1 [ RunTime:0.001203s ]
+[2019-12-17T22:22:49+08:00][sql] SELECT * FROM `class` WHERE  `Id` = 1 [ RunTime:0.001216s ]
+[2019-12-17T22:22:49+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\release.html [ array (
+  0 => 'user',
+  1 => 'bnames',
+) ]
+[2019-12-17T22:23:23+08:00][sql] CONNECT:[ UseTime:0.002211s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:23:23+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003967s ]
+[2019-12-17T22:23:23+08:00][sql] SELECT * FROM `tea_word` WHERE  `teaId` = 1  AND `classId` = 1 LIMIT 0,10 [ RunTime:0.041296s ]
+[2019-12-17T22:23:23+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\readclass.html [ array (
+  0 => 'user',
+  1 => 'classId',
+  2 => 'twords',
+  3 => 'page',
+) ]
+[2019-12-17T22:23:29+08:00][sql] CONNECT:[ UseTime:0.001714s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:23:29+08:00][sql] SHOW FULL COLUMNS FROM `stud_word` [ RunTime:0.003758s ]
+[2019-12-17T22:23:29+08:00][sql] SHOW FULL COLUMNS FROM `student` [ RunTime:0.001823s ]
+[2019-12-17T22:23:29+08:00][sql] SELECT * FROM `student` `a` INNER JOIN ( SELECT * FROM `stud_word` WHERE  `tewId` = 1 ) `s` ON `a`.`Id`=`s`.`studId` WHERE  `classId` = 1 ORDER BY `s`.`time` DESC LIMIT 0,10 [ RunTime:0.024523s ]
+[2019-12-17T22:23:29+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\read.html [ array (
+  0 => 'words',
+  1 => 'tewId',
+  2 => 'classId',
+  3 => 'page',
+) ]
+[2019-12-17T22:23:32+08:00][sql] CONNECT:[ UseTime:0.001768s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:23:32+08:00][sql] SHOW FULL COLUMNS FROM `stud_word` [ RunTime:0.003451s ]
+[2019-12-17T22:23:32+08:00][sql] SHOW FULL COLUMNS FROM `student` [ RunTime:0.003294s ]
+[2019-12-17T22:23:32+08:00][sql] SELECT * FROM `student` `a` INNER JOIN ( SELECT * FROM `stud_word` WHERE  `tewId` = 6 ) `s` ON `a`.`Id`=`s`.`studId` WHERE  `classId` = 1 ORDER BY `s`.`time` DESC LIMIT 0,10 [ RunTime:0.001270s ]
+[2019-12-17T22:23:32+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\read.html [ array (
+  0 => 'words',
+  1 => 'tewId',
+  2 => 'classId',
+  3 => 'page',
+) ]
+[2019-12-17T22:35:19+08:00][sql] CONNECT:[ UseTime:0.002010s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:35:19+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003668s ]
+[2019-12-17T22:35:19+08:00][sql] SELECT * FROM `tea_word` WHERE  `teaId` = 1  AND `classId` = 1 LIMIT 0,10 [ RunTime:0.001176s ]
+[2019-12-17T22:35:19+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\readclass.html [ array (
+  0 => 'user',
+  1 => 'classId',
+  2 => 'twords',
+  3 => 'page',
+) ]
+[2019-12-17T22:35:19+08:00][sql] CONNECT:[ UseTime:0.002219s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:35:19+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003525s ]
+[2019-12-17T22:35:19+08:00][sql] SELECT * FROM `tea_word` WHERE  `teaId` = 1  AND `classId` = 1 LIMIT 10,10 [ RunTime:0.001133s ]
+[2019-12-17T22:35:19+08:00][sql] SELECT * FROM `tea_word` WHERE  `teaId` = 1  AND `classId` = 1 LIMIT 0,10 [ RunTime:0.001107s ]
+[2019-12-17T22:35:19+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\readclass.html [ array (
+  0 => 'user',
+  1 => 'classId',
+  2 => 'twords',
+  3 => 'page',
+) ]
+[2019-12-17T22:35:20+08:00][sql] CONNECT:[ UseTime:0.001900s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:35:20+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.002523s ]
+[2019-12-17T22:35:20+08:00][sql] SELECT * FROM `tea_word` WHERE  `teaId` = 1  AND `classId` = 1 LIMIT 10,10 [ RunTime:0.000930s ]
+[2019-12-17T22:35:20+08:00][sql] SELECT * FROM `tea_word` WHERE  `teaId` = 1  AND `classId` = 1 LIMIT 0,10 [ RunTime:0.000893s ]
+[2019-12-17T22:35:20+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\readclass.html [ array (
+  0 => 'user',
+  1 => 'classId',
+  2 => 'twords',
+  3 => 'page',
+) ]
+[2019-12-17T22:35:23+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\addtest.html [ array (
+  0 => 'user',
+  1 => 'classId',
+) ]
+[2019-12-17T22:35:35+08:00][sql] CONNECT:[ UseTime:0.001886s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:35:35+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003560s ]
+[2019-12-17T22:35:35+08:00][sql] INSERT INTO `tea_word` SET `teaId` = 1 , `classId` = 1 , `content` = '
+
+455
+4' , `filename` = NULL , `time` = '20191217223534' [ RunTime:0.065787s ]
+[2019-12-17T22:35:39+08:00][sql] CONNECT:[ UseTime:0.001877s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:35:39+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.001796s ]
+[2019-12-17T22:35:39+08:00][sql] SHOW FULL COLUMNS FROM `class` [ RunTime:0.001822s ]
+[2019-12-17T22:35:39+08:00][sql] SELECT * FROM `teacher` WHERE  `Id` = 1 LIMIT 1 [ RunTime:0.000816s ]
+[2019-12-17T22:35:39+08:00][sql] SELECT * FROM `class` WHERE  `Id` = 1 [ RunTime:0.000649s ]
+[2019-12-17T22:35:39+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\release.html [ array (
+  0 => 'user',
+  1 => 'bnames',
+) ]
+[2019-12-17T22:35:41+08:00][sql] CONNECT:[ UseTime:0.001898s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:35:41+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.001885s ]
+[2019-12-17T22:35:41+08:00][sql] SELECT * FROM `tea_word` WHERE  `teaId` = 1  AND `classId` = 1 LIMIT 0,10 [ RunTime:0.001158s ]
+[2019-12-17T22:35:41+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\readclass.html [ array (
+  0 => 'user',
+  1 => 'classId',
+  2 => 'twords',
+  3 => 'page',
+) ]
+[2019-12-17T22:35:44+08:00][sql] CONNECT:[ UseTime:0.002214s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:35:44+08:00][sql] SHOW FULL COLUMNS FROM `stud_word` [ RunTime:0.002141s ]
+[2019-12-17T22:35:44+08:00][sql] SHOW FULL COLUMNS FROM `student` [ RunTime:0.001946s ]
+[2019-12-17T22:35:44+08:00][sql] SELECT * FROM `student` `a` INNER JOIN ( SELECT * FROM `stud_word` WHERE  `tewId` = 9 ) `s` ON `a`.`Id`=`s`.`studId` WHERE  `classId` = 1 ORDER BY `s`.`time` DESC LIMIT 0,10 [ RunTime:0.001560s ]
+[2019-12-17T22:35:44+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\read.html [ array (
+  0 => 'words',
+  1 => 'tewId',
+  2 => 'classId',
+  3 => 'page',
+) ]
+[2019-12-17T22:35:49+08:00][sql] CONNECT:[ UseTime:0.001887s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:35:49+08:00][sql] SHOW FULL COLUMNS FROM `stud_word` [ RunTime:0.003673s ]
+[2019-12-17T22:35:49+08:00][sql] SHOW FULL COLUMNS FROM `student` [ RunTime:0.003655s ]
+[2019-12-17T22:35:49+08:00][sql] SELECT * FROM `student` `a` INNER JOIN ( SELECT * FROM `stud_word` WHERE  `tewId` = 10 ) `s` ON `a`.`Id`=`s`.`studId` WHERE  `classId` = 1 ORDER BY `s`.`time` DESC LIMIT 0,10 [ RunTime:0.001146s ]
+[2019-12-17T22:35:49+08:00][sql] SELECT * FROM `student` `a` INNER JOIN ( SELECT * FROM `stud_word` WHERE  `tewId` = 10 ) `s` ON `a`.`Id`=`s`.`studId` WHERE  `classId` = 1 ORDER BY `s`.`time` DESC [ RunTime:0.001153s ]
+[2019-12-17T22:35:49+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\read.html [ array (
+  0 => 'words',
+  1 => 'tewId',
+  2 => 'classId',
+  3 => 'page',
+) ]
+[2019-12-17T22:35:58+08:00][sql] CONNECT:[ UseTime:0.001820s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T22:35:58+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.002106s ]
+[2019-12-17T22:35:58+08:00][sql] SELECT * FROM `tea_word` WHERE  `teaId` = 1  AND `classId` = 1 LIMIT 0,10 [ RunTime:0.001267s ]
+[2019-12-17T22:35:58+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\readclass.html [ array (
+  0 => 'user',
+  1 => 'classId',
+  2 => 'twords',
+  3 => 'page',
+) ]
+[2019-12-17T23:46:52+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\index\index.html [ array (
+) ]
+[2019-12-17T23:46:52+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\index\index.html [ array (
+) ]
+[2019-12-17T23:48:24+08:00][sql] CONNECT:[ UseTime:0.239580s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T23:48:24+08:00][sql] SHOW FULL COLUMNS FROM `student` [ RunTime:0.140844s ]
+[2019-12-17T23:48:24+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.004199s ]
+[2019-12-17T23:48:24+08:00][sql] SELECT * FROM `student` WHERE  `user_id` = '201730622101' LIMIT 1 [ RunTime:0.068524s ]
+[2019-12-17T23:48:24+08:00][sql] CONNECT:[ UseTime:0.003240s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T23:48:24+08:00][sql] SHOW FULL COLUMNS FROM `student` [ RunTime:0.003489s ]
+[2019-12-17T23:48:24+08:00][sql] SELECT * FROM `student` WHERE  `Id` = 1 LIMIT 1 [ RunTime:0.026197s ]
+[2019-12-17T23:48:24+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\index.html [ array (
+  0 => 'id',
+) ]
+[2019-12-17T23:48:25+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\default.html [ array (
+) ]
+[2019-12-17T23:48:27+08:00][sql] CONNECT:[ UseTime:0.002441s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T23:48:27+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003451s ]
+[2019-12-17T23:48:27+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.003538s ]
+[2019-12-17T23:48:27+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.187118s ]
+[2019-12-17T23:48:27+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T23:48:31+08:00][sql] CONNECT:[ UseTime:0.001624s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T23:48:31+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003369s ]
+[2019-12-17T23:48:31+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.003325s ]
+[2019-12-17T23:48:31+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.002033s ]
+[2019-12-17T23:48:31+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T23:48:32+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\default.html [ array (
+) ]
+[2019-12-17T23:48:32+08:00][sql] CONNECT:[ UseTime:0.002034s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T23:48:32+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003871s ]
+[2019-12-17T23:48:32+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.003372s ]
+[2019-12-17T23:48:32+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.002128s ]
+[2019-12-17T23:48:32+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T23:48:33+08:00][sql] CONNECT:[ UseTime:0.001728s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T23:48:33+08:00][sql] SHOW FULL COLUMNS FROM `student` [ RunTime:0.003165s ]
+[2019-12-17T23:48:33+08:00][sql] SELECT * FROM `student` `a` INNER JOIN `class` `b` ON `a`.`classId`=`b`.`Id` WHERE  `a`.`Id` = '1' LIMIT 1 [ RunTime:0.003054s ]
+[2019-12-17T23:48:33+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\person.html [ array (
+  0 => 'student',
+) ]
+[2019-12-17T23:48:35+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\default.html [ array (
+) ]
+[2019-12-17T23:48:35+08:00][sql] CONNECT:[ UseTime:0.001666s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T23:48:35+08:00][sql] SHOW FULL COLUMNS FROM `tea_word` [ RunTime:0.003602s ]
+[2019-12-17T23:48:35+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.003518s ]
+[2019-12-17T23:48:35+08:00][sql] SELECT * FROM `teacher` `a` INNER JOIN ( SELECT * FROM `tea_word` WHERE  `classId` = 1 ) `s` ON `a`.`Id`=`s`.`teaId` ORDER BY `a`.`Id` DESC LIMIT 0,10 [ RunTime:0.001915s ]
+[2019-12-17T23:48:35+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\work.html [ array (
+  0 => 'user',
+  1 => 'id',
+  2 => 'words',
+  3 => 'page',
+) ]
+[2019-12-17T23:48:36+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\default.html [ array (
+) ]
+[2019-12-17T23:49:29+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\default.html [ array (
+) ]
+[2019-12-17T23:49:32+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\index\index.html [ array (
+) ]
+[2019-12-17T23:49:39+08:00][sql] CONNECT:[ UseTime:0.001691s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T23:49:39+08:00][sql] SHOW FULL COLUMNS FROM `student` [ RunTime:0.003308s ]
+[2019-12-17T23:49:39+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.005102s ]
+[2019-12-17T23:49:39+08:00][sql] SELECT * FROM `teacher` WHERE  `user_id` = '666666' LIMIT 1 [ RunTime:0.021609s ]
+[2019-12-17T23:49:40+08:00][sql] CONNECT:[ UseTime:0.001552s ] mysql:host=127.0.0.1;port=3306;dbname=test;charset=utf8
+[2019-12-17T23:49:40+08:00][sql] SHOW FULL COLUMNS FROM `teacher` [ RunTime:0.026806s ]
+[2019-12-17T23:49:40+08:00][sql] SELECT * FROM `teacher` WHERE  `Id` = 1 LIMIT 1 [ RunTime:0.000845s ]
+[2019-12-17T23:49:40+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\tcontainer\index.html [ array (
+  0 => 'id',
+) ]
+[2019-12-17T23:49:40+08:00][info] [ VIEW ] D:\phpstudy_pro\WWW\test\app\index\view\container\default.html [ array (
+) ]

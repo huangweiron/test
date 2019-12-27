@@ -1,0 +1,20 @@
+<link rel="stylesheet" href="/static/index/css/tcontainer.css">
+<button class="btn" onclick="hui()">
+    <<</button> <form action="add?sktimeId={$sktimeId}&classId={$classId}" method="post" enctype="multipart/form-data">
+        <div>
+            <h3>课堂知识点</h3>
+            <textarea name="know" id="know" cols="130" rows="20">{$result.know}</textarea>
+            <h3>课堂作业</h3>
+            <textarea name="content" id="content" cols="130" rows="10">{$result.content}</textarea>
+            <br><label>上传文件</label>
+            <a href="download?filename={$result.filename}">{$result.filename}</a>
+            <br>
+            <input type="file" name="file">
+            <input type="submit" value="上传">
+        </div>
+        </form>
+        <script>
+            function hui() {
+                history.go(-1);
+            }
+        </script>
